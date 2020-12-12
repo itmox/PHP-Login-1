@@ -57,7 +57,7 @@ class loginForm extends dbConn {
 		$stmt = $stmt = $db->conn->prepare("SELECT * FROM $tbl_name WHERE username= :myusername");
         $stmt->bindParm(':myusername', $myusrname);
         $myusrname = $myusername;
-        stmt->execute();
+        $stmt->execute();
         
 
 		// Gets query result
